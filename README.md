@@ -1,8 +1,8 @@
-### CurrencyApp
+## CurrencyApp
 
 This project is a currency converter application that allows you to convert between Ukrainian Hryvnia (UAH) and other major currencies such as US Dollar (USD) and Euro (EUR). It retrieves the latest exchange rates from a public API to ensure accurate conversions.
 
-## Features
+### Features
 
 Header with Currency Exchange Rates: The header section displays the current exchange rates for USD to UAH and EUR to UAH. These rates are fetched from a public API and updated regularly.
 
@@ -14,7 +14,7 @@ The second currency input field and select display the converted amount in the t
 
 Any changes made to the amount or currency selection in either field will automatically trigger the conversion and update the corresponding values in real-time.
 
-## Installation
+### Installation
 
 1. Clone the repository or download the source code.
 2. Navigate to the project directory in your terminal.
@@ -23,7 +23,7 @@ Any changes made to the amount or currency selection in either field will automa
 5. Run ng serve to start the development server.
 6. Open your web browser and visit http://localhost:4200 to access the Currency Converter application.
 
-## Technologies Used
+### Technologies Used
 
 Angular: A popular JavaScript framework used for building web applications.
 HTML: Markup language for creating the structure and content of the web page.
