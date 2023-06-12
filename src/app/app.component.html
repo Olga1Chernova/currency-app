@@ -1,13 +1,7 @@
-<h2>Currency converter</h2>
-<h3>Currency course</h3>
-<p>Курс USD к UAH: </p>
-<p>Курс EUR к UAH: </p>
-
-<h3>Конвертация</h3>
 <div>
   <label for="currency1">First currency:</label>
-  <input id="currency1" type="number" min="1" step="1"/>
-  <select >
+  <input id="currency1" type="number" min="1" step="1" [(ngModel)]="currency1Value" />
+  <select id="currency1Select" [(ngModel)]="currency1Select" (change)="convertCurrency()">
     <option value="UAH">UAH</option>
     <option value="USD">USD</option>
     <option value="EUR">EUR</option>
@@ -16,15 +10,11 @@
 
 <div>
   <label for="currency2">Second currency:</label>
-  <input id="currency2" type="number" min="1" step="1"/>
-  <select >
+  <input id="currency2" type="number" min="1" step="1" [(ngModel)]="currency2Value" />
+  <select id="currency2Select" [(ngModel)]="currency2Select" (change)="convertCurrency()">
     <option value="UAH">UAH</option>
     <option value="USD">USD</option>
     <option value="EUR">EUR</option>
   </select>
 </div>
 
-
-
-
-<router-outlet></router-outlet>
