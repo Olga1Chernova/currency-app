@@ -1,27 +1,31 @@
-# CurrencyApp
+### CurrencyApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
+This project is a currency converter application that allows you to convert between Ukrainian Hryvnia (UAH) and other major currencies such as US Dollar (USD) and Euro (EUR). It retrieves the latest exchange rates from a public API to ensure accurate conversions.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Header with Currency Exchange Rates: The header section displays the current exchange rates for USD to UAH and EUR to UAH. These rates are fetched from a public API and updated regularly.
 
-## Code scaffolding
+Conversion Component: The main component of the application is the conversion section. It consists of two input fields and two dropdown selects, allowing you to specify the amount and the currencies to convert.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The first currency input field and select allow you to enter the amount in the original currency and select the currency type (UAH, USD, or EUR).
 
-## Build
+The second currency input field and select display the converted amount in the target currency and allow you to select the target currency type.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Any changes made to the amount or currency selection in either field will automatically trigger the conversion and update the corresponding values in real-time.
 
-## Running unit tests
+## Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository or download the source code.
+2. Navigate to the project directory in your terminal.
+3. Run npm install to install the required dependencies.
+4. Update the API endpoint in the code to fetch the latest exchange rates. Replace the placeholder URL with the actual API endpoint in the CurrencydataService file.
+5. Run ng serve to start the development server.
+6. Open your web browser and visit http://localhost:4200 to access the Currency Converter application.
 
-## Running end-to-end tests
+## Technologies Used
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Angular: A popular JavaScript framework used for building web applications.
+HTML: Markup language for creating the structure and content of the web page.
+CSS: Stylesheet language for describing the presentation and layout of the web page.
+TypeScript: A typed superset of JavaScript used in Angular applications.
