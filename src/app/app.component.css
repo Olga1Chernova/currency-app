@@ -50,3 +50,11 @@ p {
     margin: 5px 0;
     color: #fff;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
